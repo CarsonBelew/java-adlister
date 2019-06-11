@@ -15,7 +15,12 @@ public class HelloWorldServlet extends HttpServlet {
         PrintWriter out = res.getWriter();
         String name;
         name = req.getParameter("name");
-        out.println("Welcome to the page, " + name);
+        if (name == null){
+            out.println("Hello there");
+        } else {
+            out.println("Welcome to the page, " + name);
+        }
+
     }
 }
 

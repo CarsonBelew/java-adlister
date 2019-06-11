@@ -25,8 +25,6 @@ public class FormInput extends HttpServlet {
         PrintWriter out = res.getWriter();
         res.setContentType("text/html");
 
-        String pageForm;
-
         out.println("<form method='POST'>" +
                 "<input type='text' name='username' placeholder='enter username'>"+
                 "\n<input type='password' name='password' placeholder='enter password'>"+
