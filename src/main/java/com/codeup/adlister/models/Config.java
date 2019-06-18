@@ -2,12 +2,12 @@ package com.codeup.adlister.models;
 
 public class Config {
         public String getUrl() {
-            return "jdbc:mysql://localhost/movies_db?serverTimezone=UTC&useSSL=false";
+            return "jdbc:mysql://localhost/adlister_db?serverTimezone=UTC&useSSL=false";
         }
         public String getUser() {
-            return "someuser";
+            return "codeup_test_user";
         }
         public String getPassword() {
-            return "strongpassword";
+            return "codeup";
         }
     }
